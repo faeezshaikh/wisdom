@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Latticework of Worldly Wisdom &mdash; Munger &amp; Buffett</title>
+<meta name="description" content="The wisdom sayings of Charlie Munger and Warren Buffett, organized by theme, with the concepts behind them and a framework to remember and use them.">
+<style>
+  :root { color-scheme: light;
+    --ink:#1f2328; --soft:#5b6470; --faint:#8b93a0;
+    --bg:#faf8f4; --card:#ffffff; --line:#e7e2d8;
+    --accent:#8a5a2b; --accent2:#2b5a8a; --gold:#b98a3e;
+    --tag:#f3ede2;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family: Georgia, 'Times New Roman', serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+  .wrap { max-width:880px; margin:0 auto; padding:40px 28px 80px; }
+  header.hero { text-align:center; padding:28px 0 20px; border-bottom:3px double var(--line); margin-bottom:12px; }
+  .hero h1 { font-size:2.1rem; font-weight:600; letter-spacing:.5px; }
+  .hero .sub { color:var(--soft); font-style:italic; margin-top:8px; font-size:1.02rem; }
+  .hero .names { margin-top:14px; font-size:.82rem; letter-spacing:2.5px; text-transform:uppercase; color:var(--accent); font-family:Verdana, sans-serif; }
+
+  nav.toc { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px 22px; margin:26px 0; }
+  nav.toc h2 { font-size:.8rem; letter-spacing:2px; text-transform:uppercase; color:var(--faint); font-family:Verdana,sans-serif; margin-bottom:10px; }
+  nav.toc ol { columns:2; column-gap:30px; padding-left:20px; font-size:.95rem; }
+  nav.toc li { margin:4px 0; break-inside:avoid; }
+  nav.toc a { color:var(--accent2); text-decoration:none; }
+  nav.toc a:hover { text-decoration:underline; }
+
+  .searchbar { margin:4px 0 30px; display:flex; gap:10px; }
+  .searchbar input { flex:1; font-family:inherit; font-size:1rem; padding:10px 14px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--ink); }
+  .searchbar input:focus { outline:2px solid var(--gold); border-color:var(--gold); }
+  .nores { display:none; color:var(--faint); font-style:italic; text-align:center; margin:30px 0; }
+
+  section.theme { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:30px 34px; margin-bottom:28px; }
+  section.theme h2 { font-size:1.45rem; font-weight:600; color:var(--ink); }
+  .kicker { font-family:Verdana,sans-serif; font-size:.72rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:6px; }
+  .essay { margin-top:14px; color:var(--ink); }
+  .essay p { margin-bottom:12px; }
+  blockquote { margin:18px 0; padding:14px 20px; border-left:4px solid var(--gold); background:var(--tag); border-radius:0 8px 8px 0; font-size:1.06rem; font-style:italic; }
+  blockquote .who { display:block; margin-top:8px; font-style:normal; font-size:.82rem; font-family:Verdana,sans-serif; letter-spacing:1px; color:var(--accent); text-transform:uppercase; }
+  .apply { margin-top:16px; background:#f6f9fc; border:1px solid #dce7f1; border-radius:8px; padding:14px 18px; font-size:.95rem; }
+  .apply b { font-family:Verdana,sans-serif; font-size:.72rem; letter-spacing:2px; text-transform:uppercase; color:var(--accent2); display:block; margin-bottom:6px; }
+
+  .model { background:linear-gradient(135deg,#fdf9f0,#f7efe0); border:1px solid #e3d5b8; border-radius:12px; padding:32px 36px; margin:36px 0; }
+  .model h2 { font-size:1.5rem; margin-bottom:6px; }
+  .model .step { display:flex; gap:16px; margin:16px 0; align-items:flex-start; }
+  .model .n { flex:0 0 38px; height:38px; border-radius:50%; background:var(--accent); color:#fff; font-family:Verdana,sans-serif; font-weight:bold; display:flex; align-items:center; justify-content:center; font-size:1.05rem; }
+  .model .step h3 { font-size:1.08rem; margin-bottom:2px; }
+  .model .step p { font-size:.95rem; color:var(--soft); }
+  .checklist { margin-top:20px; border-top:1px dashed #d8c9a8; padding-top:18px; }
+  .checklist h3 { font-size:1rem; margin-bottom:8px; }
+  .checklist ul { padding-left:22px; font-size:.95rem; }
+  .checklist li { margin:6px 0; }
+
+  footer { text-align:center; color:var(--faint); font-size:.85rem; margin-top:50px; font-style:italic; }
+  @media (max-width:640px){ nav.toc ol{columns:1;} section.theme{padding:22px;} .model{padding:22px;} }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <h1>A Latticework of Worldly Wisdom</h1>
+    <div class="sub">The sayings of two men, the ideas beneath them, and a way to remember and use them</div>
+    <div class="names">Charlie Munger &middot; 1924&ndash;2023 &nbsp;&bull;&nbsp; Warren Buffett &middot; b. 1930</div>
+  </header>
+
+  <div class="searchbar">
+    <input id="q" type="search" placeholder="Search quotes and themes&hellip; (e.g. envy, patience, incentives)" aria-label="Search">
+  </div>
+  <div class="nores" id="nores">No themes match that search.</div>
+
+  <nav class="toc" id="toc">
+    <h2>The Themes</h2>
+    <ol>
+      <li><a href="#happiness">Low Expectations &amp; Happiness</a></li>
+      <li><a href="#envy">Envy &mdash; The Sin With No Fun</a></li>
+      <li><a href="#inversion">Inversion &mdash; Avoiding Stupidity</a></li>
+      <li><a href="#incentives">The Power of Incentives</a></li>
+      <li><a href="#circle">The Circle of Competence</a></li>
+      <li><a href="#compounding">Compounding &amp; Patience</a></li>
+      <li><a href="#temperament">Temperament &amp; Mr. Market</a></li>
+      <li><a href="#learning">The Learning Machine</a></li>
+      <li><a href="#integrity">Integrity &amp; Reputation</a></li>
+      <li><a href="#deserve">Deserve What You Want</a></li>
+      <li><a href="#habits">Habits &amp; the Inner Scorecard</a></li>
+      <li><a href="#latticework">The Latticework Itself</a></li>
+    </ol>
+  </nav>
+
+  <section class="theme" id="happiness">
+    <div class="kicker">Theme 01 &middot; Life</div>
+    <h2>Low Expectations &amp; Happiness</h2>
+    <blockquote>&ldquo;The first rule of a happy life is low expectations. If you have unrealistic expectations you&rsquo;re going to be miserable your whole life.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <blockquote>&ldquo;The three things I have found helpful in coping with life&rsquo;s challenges: have low expectations, have a sense of humor, and surround yourself with the love of friends and family.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <div class="essay">
+      <p>Munger&rsquo;s point is not pessimism &mdash; it is arithmetic. Happiness is roughly <em>reality minus expectations</em>. You control the second term far more reliably than the first. A person who expects perfection finds every day a disappointment; a person who expects difficulty finds every ordinary day a quiet gift. Munger lived through blindness in one eye, the death of a child, and a divorce, and still called himself a happy man &mdash; because he never believed life owed him smoothness.</p>
+      <p>This connects to Stoicism (which Munger admired): you cannot control outcomes, only your demands upon them. Lowering expectations is not lowering ambition &mdash; Munger was fiercely ambitious. It is refusing to let your <em>contentment</em> be hostage to outcomes you don&rsquo;t control.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>Before any event &mdash; a meeting, a trip, a purchase &mdash; ask: &ldquo;What am I assuming will go right?&rdquo; Expect friction. When things go merely fine, you'll feel rich instead of cheated.</div>
+  </section>
+
+  <section class="theme" id="envy">
+    <div class="kicker">Theme 02 &middot; Psychology</div>
+    <h2>Envy &mdash; The Sin With No Fun</h2>
+    <blockquote>&ldquo;Envy is a really stupid sin because it&rsquo;s the only one you could never possibly have any fun at. There&rsquo;s a lot of pain and no fun. Why would you want to get on that trolley?&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <blockquote>&ldquo;It is not greed that drives the world, but envy.&rdquo;<span class="who">&mdash; Warren Buffett (a line Munger often repeated)</span></blockquote>
+    <div class="essay">
+      <p>Gluttony at least offers a good meal; lust and sloth have their moments. Envy delivers nothing but corrosion. Munger considered it the most destructive force in human affairs &mdash; and, crucially, in <em>investing</em>: people don&rsquo;t ruin themselves wanting to be rich, they ruin themselves watching a neighbor get rich <em>faster</em>. That is what pulls sensible people into bubbles.</p>
+      <p>The deeper concept: envy is a comparison error. It measures your life against a cherry-picked highlight of someone else&rsquo;s, so it can never be satisfied &mdash; someone will always be ahead on some axis. Buffett put the antidote well: the world runs on envy, so simply opting out of the comparison game is a durable competitive advantage in happiness.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>When you feel the sting of someone else&rsquo;s success, name it out loud as envy. Then ask Munger&rsquo;s question: &ldquo;What fun is there on this trolley?&rdquo; Redirect the energy into your own compounding instead.</div>
+  </section>
+
+  <section class="theme" id="inversion">
+    <div class="kicker">Theme 03 &middot; Thinking</div>
+    <h2>Inversion &mdash; Avoiding Stupidity Beats Seeking Brilliance</h2>
+    <blockquote>&ldquo;Invert, always invert: turn a situation or problem upside down. Look at it backward.&rdquo;<span class="who">&mdash; Charlie Munger, after mathematician Carl Jacobi</span></blockquote>
+    <blockquote>&ldquo;It is remarkable how much long-term advantage people like us have gotten by trying to be consistently not stupid, instead of trying to be very intelligent.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <blockquote>&ldquo;All I want to know is where I&rsquo;m going to die, so I&rsquo;ll never go there.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <div class="essay">
+      <p>Most people ask &ldquo;How do I succeed?&rdquo; Munger asked &ldquo;How do I fail?&rdquo; &mdash; and then rigorously avoided those paths. This works because failure is far more predictable than success: there are a thousand ways to a great life but a short, well-documented list of ways to ruin one (addiction, envy, resentment, leverage, dishonesty, sloth).</p>
+      <p>Inversion also disciplines decisions. Instead of listing why a plan will work, list everything that would guarantee it fails, then check whether you&rsquo;re doing any of those things. Munger collected examples of <em>bad</em> judgment his whole life precisely because studying folly is cheaper than experiencing it.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>For any big goal, write the anti-goal: &ldquo;How would I guarantee this fails?&rdquo; Then audit your behavior against that list monthly. Avoiding the dumb mistake is worth more than finding the clever move.</div>
+  </section>
+
+  <section class="theme" id="incentives">
+    <div class="kicker">Theme 04 &middot; Human Nature</div>
+    <h2>The Power of Incentives</h2>
+    <blockquote>&ldquo;Show me the incentive and I will show you the outcome.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <blockquote>&ldquo;Never, ever, think about something else when you should be thinking about the power of incentives.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <div class="essay">
+      <p>Munger called incentive-caused bias the most underrated force in the world &mdash; and said that even after a lifetime of studying it, he still <em>underestimated</em> it. People do not consciously lie; their incentives quietly reshape what they sincerely believe. A surgeon paid per operation sincerely sees more need for surgery. A broker paid on commission sincerely believes in the trade.</p>
+      <p>The lesson cuts two ways. Reading the world: when behavior puzzles you, stop analyzing the person and analyze their payoff structure &mdash; the mystery usually dissolves. Designing the world: if you want a behavior, don&rsquo;t lecture &mdash; change the incentive. FedEx couldn&rsquo;t get overnight packages sorted in time until it stopped paying workers by the hour and paid by the completed shift. Problem solved overnight, literally.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>Before trusting advice, ask: &ldquo;How does this person get paid?&rdquo; Before blaming people for a broken process, ask: &ldquo;What is the system actually rewarding?&rdquo;</div>
+  </section>
+
+  <section class="theme" id="circle">
+    <div class="kicker">Theme 05 &middot; Self-Knowledge</div>
+    <h2>The Circle of Competence</h2>
+    <blockquote>&ldquo;You only have to be able to evaluate companies within your circle of competence. The size of that circle is not very important; knowing its boundaries, however, is vital.&rdquo;<span class="who">&mdash; Warren Buffett</span></blockquote>
+    <blockquote>&ldquo;Knowing what you don&rsquo;t know is more useful than being brilliant.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <div class="essay">
+      <p>The idea is not to know a lot &mdash; it is to know <em>exactly where your knowledge ends</em>. Buffett famously skipped the entire dot-com boom because technology sat outside his circle, absorbed years of mockery for it, and was vindicated. The dangerous zone is never ignorance; it is the fringe just past your competence, where you know enough to be confident and too little to be right.</p>
+      <p>Honoring the circle requires swallowing ego: you must pass on exciting things others are winning at (see: envy). But a small circle honestly mapped beats a large circle vaguely imagined. And the circle can be grown &mdash; slowly, deliberately, through the learning machine below.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>Keep three lists: things you understand deeply, things you half-understand, things you don&rsquo;t. Make big decisions only from list one. Treat list two as the danger zone &mdash; it feels like knowledge but isn&rsquo;t.</div>
+  </section>
+
+  <section class="theme" id="compounding">
+    <div class="kicker">Theme 06 &middot; Time</div>
+    <h2>Compounding &amp; the Discipline of Patience</h2>
+    <blockquote>&ldquo;The big money is not in the buying and the selling, but in the waiting.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <blockquote>&ldquo;The first rule of compounding is to never interrupt it unnecessarily.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <blockquote>&ldquo;Someone&rsquo;s sitting in the shade today because someone planted a tree a long time ago.&rdquo;<span class="who">&mdash; Warren Buffett</span></blockquote>
+    <blockquote>&ldquo;Investing is where you find a few great companies and then sit on your ass.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <div class="essay">
+      <p>Compounding is the one honest miracle available to ordinary people, and almost everyone forfeits it &mdash; not through bad picks but through interruption: selling early, switching strategies, reaching for action. Munger noted that if you removed Berkshire&rsquo;s top fifteen decisions across decades, its record would be average. The fortune came from a handful of right calls held with &ldquo;a hell of a lot of patience.&rdquo;</p>
+      <p>The concept generalizes far beyond money. Knowledge compounds. Trust compounds. Health compounds. Each follows the same brutal curve: nearly invisible progress for years, then astonishing results &mdash; but only for those who didn&rsquo;t quit during the flat part. The enemy is the itch to <em>do something</em>, because activity feels like progress while waiting feels like failure. It&rsquo;s the reverse.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>Identify your three compounding machines (savings, skills, relationships). Then ask not &ldquo;how do I accelerate them?&rdquo; but &ldquo;how might I interrupt them?&rdquo; &mdash; and stop doing that.</div>
+  </section>
+
+  <section class="theme" id="temperament">
+    <div class="kicker">Theme 07 &middot; Emotion</div>
+    <h2>Temperament &amp; Mr. Market</h2>
+    <blockquote>&ldquo;We simply attempt to be fearful when others are greedy and to be greedy only when others are fearful.&rdquo;<span class="who">&mdash; Warren Buffett, 1986 shareholder letter</span></blockquote>
+    <blockquote>&ldquo;The most important quality for an investor is temperament, not intellect.&rdquo;<span class="who">&mdash; Warren Buffett</span></blockquote>
+    <blockquote>&ldquo;Price is what you pay. Value is what you get.&rdquo;<span class="who">&mdash; Warren Buffett</span></blockquote>
+    <div class="essay">
+      <p>Buffett inherited from his teacher Ben Graham the parable of <em>Mr. Market</em>: a manic-depressive business partner who shows up daily offering to buy or sell at wild prices. You are free to ignore him. The crowd&rsquo;s mood is not information about value &mdash; it is an opportunity precisely when it becomes extreme.</p>
+      <p>This is why Buffett insists temperament beats IQ. The hard part of good judgment is not calculation; it is standing still while everyone around you panics or celebrates. Emotional stability, independent thinking, and comfort with looking wrong for long stretches &mdash; these are trainable, and they matter in careers, arguments, and crises just as much as in markets. Price-versus-value is the compass: the crowd sets prices, but only analysis reveals value, and the gap between them is where all opportunity lives.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>When everyone around you agrees strongly &mdash; euphoric or terrified &mdash; treat that consensus itself as data that something is probably mispriced: an asset, a job market, a narrative. Write your reasoning down <em>before</em> the crowd reacts, and judge yourself against that, not against the mood.</div>
+  </section>
+
+  <section class="theme" id="learning">
+    <div class="kicker">Theme 08 &middot; Growth</div>
+    <h2>The Learning Machine</h2>
+    <blockquote>&ldquo;Spend each day trying to be a little wiser than you were when you woke up.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <blockquote>&ldquo;In my whole life, I have known no wise people who didn&rsquo;t read all the time &mdash; none, zero.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <blockquote>&ldquo;The most important investment you can make is in yourself.&rdquo;<span class="who">&mdash; Warren Buffett</span></blockquote>
+    <div class="essay">
+      <p>Munger described Buffett as a &ldquo;learning machine&rdquo; and credited Berkshire&rsquo;s success less to brilliance than to the fact that both men kept learning continuously for seventy years &mdash; so the Buffett of 70 would have been incomprehensible to the Buffett of 40. Both spent five to six hours a day reading. Their edge was not speed; it was accumulation that never stopped.</p>
+      <p>The underlying model is compounding applied to knowledge (Theme 06 again &mdash; the themes interlock). Going to bed slightly wiser each day sounds trivially small, which is exactly why almost nobody does it for decades, which is exactly why it works. Munger also demanded intellectual honesty as part of the machine: &ldquo;a year in which you don&rsquo;t destroy one of your best-loved ideas is a wasted year.&rdquo; Learning includes unlearning.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>Protect a daily reading block, however small. Once a year, deliberately hunt for one belief you hold strongly and try to kill it with evidence. If it survives, you trust it more; if it dies, you just got wiser.</div>
+  </section>
+
+  <section class="theme" id="integrity">
+    <div class="kicker">Theme 09 &middot; Character</div>
+    <h2>Integrity &amp; Reputation</h2>
+    <blockquote>&ldquo;It takes 20 years to build a reputation and five minutes to ruin it. If you think about that, you&rsquo;ll do things differently.&rdquo;<span class="who">&mdash; Warren Buffett</span></blockquote>
+    <blockquote>&ldquo;In looking for people to hire, look for three qualities: integrity, intelligence, and energy. And if they don&rsquo;t have the first, the other two will kill you.&rdquo;<span class="who">&mdash; Warren Buffett</span></blockquote>
+    <div class="essay">
+      <p>Buffett&rsquo;s hiring line hides a sharp inversion: a dishonest person is <em>more</em> dangerous the smarter and more energetic they are. You actually want your crooks dumb and lazy. Integrity isn&rsquo;t a nice-to-have stacked on top of talent &mdash; it is the multiplier that decides whether talent builds or destroys.</p>
+      <p>Reputation follows the asymmetry of compounding: built in drops, lost in buckets. Buffett told Congress during the 1991 Salomon Brothers scandal: &ldquo;Lose money for the firm and I will be understanding. Lose a shred of reputation for the firm and I will be ruthless.&rdquo; The practical test he gave employees: never do anything you&rsquo;d be unwilling to see on the front page of tomorrow&rsquo;s newspaper, written by an unfriendly reporter.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>Use the newspaper test before gray-area decisions. And when evaluating people &mdash; partners, hires, advisors &mdash; weigh integrity first, because it determines the sign, not just the size, of everything they&rsquo;ll do.</div>
+  </section>
+
+  <section class="theme" id="deserve">
+    <div class="kicker">Theme 10 &middot; Earning</div>
+    <h2>Deserve What You Want</h2>
+    <blockquote>&ldquo;The safest way to get what you want is to try to deserve what you want. It&rsquo;s such a simple idea. It&rsquo;s the golden rule. You want to deliver to the world what you would buy if you were on the other end.&rdquo;<span class="who">&mdash; Charlie Munger, USC commencement, 2007</span></blockquote>
+    <blockquote>&ldquo;The highest form that civilization can reach is a seamless web of deserved trust.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <div class="essay">
+      <p>Most self-help asks how to <em>get</em> &mdash; clients, promotions, love. Munger inverts it (Theme 03 again): become the kind of person who obviously deserves those things, and acquisition largely takes care of itself. Want great partners? Be a great partner. Want trust? Be relentlessly trustworthy for years. It&rsquo;s slower than tactics and immeasurably more durable.</p>
+      <p>His &ldquo;seamless web of deserved trust&rdquo; extends this to organizations: the best systems aren&rsquo;t the most controlled but the ones where procedure withers away because everyone has earned the right to be trusted. Berkshire ran a few-hundred-billion-dollar company with a headquarters staff of about twenty-five on exactly this principle.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>Take the thing you want most. Write down what the person who <em>deserves</em> it does daily. Do that, and measure yourself on deserving &mdash; the getting lags, but it follows.</div>
+  </section>
+
+  <section class="theme" id="habits">
+    <div class="kicker">Theme 11 &middot; Self-Mastery</div>
+    <h2>Habits &amp; the Inner Scorecard</h2>
+    <blockquote>&ldquo;The chains of habit are too light to be felt until they are too heavy to be broken.&rdquo;<span class="who">&mdash; Warren Buffett (quoting an older proverb he loved)</span></blockquote>
+    <blockquote>&ldquo;The big question about how people behave is whether they&rsquo;ve got an Inner Scorecard or an Outer Scorecard. It helps if you can be satisfied with an Inner Scorecard.&rdquo;<span class="who">&mdash; Warren Buffett</span></blockquote>
+    <div class="essay">
+      <p>Buffett&rsquo;s habit line is compounding again, with teeth: every habit is tiny today and sovereign in twenty years, which means the time to choose habits is while they&rsquo;re still weightless. He urged students to pick someone they admire, list the qualities that make them admirable, and simply start practicing those qualities &mdash; since every one of them is a matter of habit, not talent.</p>
+      <p>The Inner Scorecard is the deeper idea: do you judge yourself by your own standards or by applause? Buffett&rsquo;s test &mdash; would you rather be the world&rsquo;s best investor while everyone thinks you&rsquo;re the worst, or the worst while everyone thinks you&rsquo;re the best? Your honest answer reveals your scorecard. Inner-scorecard people can hold unpopular positions, wait out mockery, and sleep well &mdash; which is precisely the temperament Theme 07 demands.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>Audit one light chain: a small daily habit that, compounded for twenty years, you&rsquo;d regret or cherish. And on any decision where you fear judgment, ask: &ldquo;Whose scorecard am I using right now?&rdquo;</div>
+  </section>
+
+  <section class="theme" id="latticework">
+    <div class="kicker">Theme 12 &middot; The Meta-Idea</div>
+    <h2>The Latticework &mdash; Why Isolated Facts Aren&rsquo;t Enough</h2>
+    <blockquote>&ldquo;You can&rsquo;t really know anything if you just remember isolated facts. You&rsquo;ve got to have models in your head, and you&rsquo;ve got to array your experience on this latticework of models.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <blockquote>&ldquo;To the man with only a hammer, every problem looks like a nail.&rdquo;<span class="who">&mdash; Charlie Munger</span></blockquote>
+    <div class="essay">
+      <p>This is the idea that organizes all the others. Munger argued that wisdom is not a pile of facts but a <em>structure</em>: eighty or ninety big models drawn from psychology, math, biology, engineering, and economics, into which experience gets filed. A fact hung on a model is remembered and usable; a fact alone evaporates. That is why this page is organized by concept rather than as a flat list of quotes.</p>
+      <p>The hammer warning is the failure mode: a specialist with one model forces every problem into it. The cure is deliberate breadth &mdash; a working handful of the big ideas from every discipline, so the problem selects the model instead of the model distorting the problem. Notice how the themes above already interlock: inversion powers integrity and deserving; compounding powers habits, learning, and patience; psychology (envy, incentives) explains why the others are hard. That interlocking <em>is</em> the latticework.</p>
+    </div>
+    <div class="apply"><b>Put it to use</b>When facing a hard problem, consciously run it through three unrelated models (e.g., incentives, inversion, compounding) before deciding. If every problem this month got the same model, you&rsquo;re holding a hammer.</div>
+  </section>
+
+  <div class="model" id="remember">
+    <div class="kicker">The Mental Model</div>
+    <h2>How to Remember All of This: W.I.S.E.</h2>
+    <p style="color:var(--soft); margin-top:4px;">Twelve themes collapse into four moves. Run them in order on any decision, or any ordinary day.</p>
+
+    <div class="step"><div class="n">W</div><div>
+      <h3>Wait &mdash; let compounding work</h3>
+      <p>Patience, sit-on-your-ass investing, planted trees, unbroken chains of habit. Default to inaction unless the case for action is overwhelming. <em>(Themes 6, 11)</em></p>
+    </div></div>
+    <div class="step"><div class="n">I</div><div>
+      <h3>Invert &mdash; avoid stupidity before seeking brilliance</h3>
+      <p>Ask how this fails, where the incentives are bent, whether you&rsquo;ve left your circle of competence, whether envy is driving the bus. <em>(Themes 2, 3, 4, 5)</em></p>
+    </div></div>
+    <div class="step"><div class="n">S</div><div>
+      <h3>Steady &mdash; keep your temperament when others lose theirs</h3>
+      <p>Mr. Market&rsquo;s moods are opportunities, not instructions. Low expectations keep you calm; the inner scorecard keeps you independent. <em>(Themes 1, 7, 11)</em></p>
+    </div></div>
+    <div class="step"><div class="n">E</div><div>
+      <h3>Earn &mdash; deserve what you want, and learn daily</h3>
+      <p>Integrity first; trust built in drops; go to bed a little wiser every night and kill one best-loved idea a year. <em>(Themes 8, 9, 10, 12)</em></p>
+    </div></div>
+
+    <div class="checklist">
+      <h3>The daily five-question checklist</h3>
+      <ul>
+        <li><b>Expectations:</b> Am I unhappy about reality, or about an expectation I invented?</li>
+        <li><b>Envy:</b> Is any of today&rsquo;s discontent just someone else&rsquo;s highlight reel?</li>
+        <li><b>Incentives:</b> In today&rsquo;s key interaction, how does the other party get paid?</li>
+        <li><b>Interruption:</b> Am I about to interrupt something that&rsquo;s compounding?</li>
+        <li><b>Wiser:</b> What do I understand tonight that I didn&rsquo;t this morning?</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &ldquo;Take a simple idea and take it seriously.&rdquo; &mdash; Charlie Munger<br>
+    Quotes drawn from Berkshire Hathaway shareholder letters &amp; meetings, Poor Charlie&rsquo;s Almanack, and recorded talks &amp; commencement speeches.
+  </footer>
+</div>
+
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section.theme'));
+  var nores = document.getElementById('nores');
+  var toc = document.getElementById('toc');
+  var model = document.getElementById('remember');
+  q.addEventListener('input', function(){
+    var term = q.value.trim().toLowerCase();
+    var shown = 0;
+    sections.forEach(function(s){
+      var hit = !term || s.textContent.toLowerCase().indexOf(term) !== -1;
+      s.style.display = hit ? '' : 'none';
+      if (hit) shown++;
+    });
+    nores.style.display = (term && shown === 0) ? 'block' : 'none';
+    toc.style.display = term ? 'none' : '';
+    model.style.display = term ? 'none' : '';
+  });
+})();
+</script>
+</body>
+</html>
